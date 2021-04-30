@@ -1,28 +1,26 @@
-import os
+#thibault
 
-#gab
+import os
 grille = [["-","-","-"],
           ["-","-","-"],
           ["-","-","-"]]
-
 jeu = True
-
-#gab
 poss = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
+clear = lambda: os.system('cls')
 
-# defs
-#gab
+# defs # gab
+
 def show_grid():
     """ affiche la grille actuelle """
     print(f"{grille[0]}\n{grille[1]}\n{grille[2]}")
-#gab
+
 def num_to_pos(num):
     """ transforme le num de case donné en positions """
     return poss[num-1]
 
+ # aurelien
 
-
-def tour_croix(pos): # aurelien
+def tour_croix(pos):
     """" fait jouer les croix """
     if grille[pos[0]][pos[1]] == "-":
         grille[pos[0]][pos[1]] = "X"
@@ -32,8 +30,10 @@ def tour_croix(pos): # aurelien
     else:
         print("cette case est déjà occupée !")
         tour_croix(num_to_pos(int(input("CROIX : dans quelle case veux-tu jouer ?\n"))))
+          
+# aurelien
 
-def tour_ronds(pos): # aurelien
+def tour_ronds(pos):
     """" fait jouer les ronds """
     if grille[pos[0]][pos[1]] == "-":
         grille[pos[0]][pos[1]] = "O"
@@ -44,9 +44,9 @@ def tour_ronds(pos): # aurelien
         print("cette case est déjà occupée !")
         tour_ronds(num_to_pos(int(input("RONDS : dans quelle case veux-tu jouer ?\n"))))
 
+# aurelien
 
-
-def check_win(): # aurelien
+def check_win():
     """ vérifie si un joueur a gagné """
     for a in range(0,3):
         if grille[a][0] == grille[a][1] and grille[a][0] == grille[a][2] and grille[a][0] !="-" :
@@ -64,15 +64,11 @@ def check_win(): # aurelien
         print(f"Match nul !\n")
         quit()
 
-
-
-
-clear = lambda: os.system('cls')
-
-
-# début du jeu # aurelien
+# début du jeu # thibault
 
 clear()
+print(" __  __  ____  _____  _____ _____ ____  _   _ \n|  \/  |/ __ \|  __ \|  __ \_   _/ __ \| \ | |\n| \  / | |  | | |__) | |__) || || |  | |  \| |\n| |\/| | |  | |  _  /|  ___/ | || |  | | . ` |\n| |  | | |__| | | \ \| |    _| || |__| | |\  |\n|_|  |_|\____/|_|  \_\_|   |_____\____/|_| \_|\n")
+print("Alignez 3 symboles identiques et c'est gagné !")
 print("les cases sont numérotées de 1 à 9, de haut en bas et des gauche à droite :")
 print("|1|2|3| \n|4|5|6| \n|7|8|9| \n")
 
