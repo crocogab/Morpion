@@ -1,6 +1,5 @@
 import os
 
-
 grille = [["-","-","-"],
           ["-","-","-"],
           ["-","-","-"]]
@@ -8,7 +7,6 @@ grille = [["-","-","-"],
 jeu = True
 
 poss = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
-
 
 # defs
 
@@ -21,7 +19,8 @@ def num_to_pos(num):
     return poss[num-1]
 
 
-def tour_croix(pos):
+
+def tour_croix(pos): # aurelien
     """" fait jouer les croix """
     if grille[pos[0]][pos[1]] == "-":
         grille[pos[0]][pos[1]] = "X"
@@ -29,9 +28,10 @@ def tour_croix(pos):
         show_grid()
         return
     else:
-        print("cette case est déjà occupée !") 
+        print("cette case est déjà occupée !")
+        tour_croix(num_to_pos(int(input("CROIX : dans quelle case veux-tu jouer ?\n"))))
 
-def tour_ronds(pos):
+def tour_ronds(pos): # aurelien
     """" fait jouer les ronds """
     if grille[pos[0]][pos[1]] == "-":
         grille[pos[0]][pos[1]] = "O"
@@ -39,7 +39,10 @@ def tour_ronds(pos):
         show_grid()
         return
     else:
-        print("cette case est déjà occupée !") 
+        print("cette case est déjà occupée !")
+        tour_ronds(num_to_pos(int(input("RONDS : dans quelle case veux-tu jouer ?\n"))))
+
+
 
 def check_win():
     """ vérifie si un joueur a gagné """
@@ -57,13 +60,10 @@ def check_win():
 clear = lambda: os.system('cls')
 
 
-
-
-# début du jeu
+# début du jeu # aurelien
 
 clear()
-print("Le premier joueur a aligner 3 symboles identiques gagne la partie.")
-print("Les cases sont numérotées de 1 à 9, de haut en bas et des gauche à droite :")
+print("les cases sont numérotées de 1 à 9, de haut en bas et des gauche à droite :")
 print("|1|2|3| \n|4|5|6| \n|7|8|9| \n")
 
 
