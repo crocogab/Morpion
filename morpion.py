@@ -44,7 +44,7 @@ def tour_ronds(pos): # aurelien
 
 
 
-def check_win():
+def check_win(): # aurelien
     """ vérifie si un joueur a gagné """
     for a in range(0,3):
         if grille[a][0] == grille[a][1] and grille[a][0] == grille[a][2] and grille[a][0] !="-" :
