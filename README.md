@@ -4,8 +4,11 @@ Gratuit, open-source et facile à comprendre.
 *A faire :*
 - [x] Coder un générateur aléatoire de parties
 - [ ] Retirer les doublons
-- [ ] Avoir une quantité nécessaire pour une ia
-- [ ] Coder l'IA
+- [x] Avoir une quantité nécessaire pour une ia
+- [x] Avoir code un generateur de données
+- [ ] IA basique
+- [ ] IA intermediaire
+- [ ] IA finale
 
 *A été réalisé dans un cadre scolaire.*  
 
