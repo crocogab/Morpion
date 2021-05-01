@@ -5,7 +5,7 @@ Gratuit, open-source et facile à comprendre.
 - [x] Coder un générateur aléatoire de parties
 - [ ] Retirer les doublons
 - [x] Avoir une quantité nécessaire pour une ia
-- [x] Avoir code un generateur de données
+- [x] Avoir code un generateur de données (game / resultat)
 - [ ] IA basique
 - [ ] IA intermediaire
 - [ ] IA finale
