@@ -1,1 +1,4 @@
-patch result_coder.py (pb avec match nul)
+[x]Coder un générateur aléatoire de parties
+[ ]Retirer les doublons
+[ ]Avoir une quantité nécessaire pour une ia
+[ ]Coder l'IA
