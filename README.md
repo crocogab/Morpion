@@ -1,5 +1,6 @@
 Jeu de __Morpion__ en python  
 Gratuit, open-source et facile à comprendre.  
+
 *A faire :*
 - [x] Coder un générateur aléatoire de parties
 - [ ] Retirer les doublons
