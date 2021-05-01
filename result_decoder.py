@@ -1,7 +1,7 @@
 import os
 
 file = open("C:/Users/croco/Desktop/Cours/NSI/Morpion/data.txt", "r")
-file2 = open("C:/Users/croco/Desktop/Cours/NSI/Morpion/data_result.txt", "a")
+file2 = open("C:/Users/croco/Desktop/Cours/NSI/Morpion/data_result.txt", "w")
 
 
 
