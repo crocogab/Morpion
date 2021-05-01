@@ -58,7 +58,7 @@ def check_win(): # aurelien
             quit()
         elif grille[0][a] == grille[1][a] and grille[0][a] == grille[2][a] and grille[0][a] !="-" :
             print(f"C'est gagné sur la colonne {a+1} pour {grille[0][a]} !\n")
-            file.write((str(grille)+"\n"))
+            file.write((str(grille) +"\n")) 
             quit()
     if (grille[0][0] == grille[1][1] and grille[0][0] == grille[2][2] and grille[0][0] !="-") or (grille[0][2] == grille[1][1] and grille[0][2] == grille[2][0] and grille[0][2] !="-"):
             print(f"C'est gagné sur la diagonale pour {grille[1][1]} !\n")
