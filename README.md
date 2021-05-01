@@ -8,3 +8,5 @@ Gratuit, open-source et facile à comprendre.
 - [ ] Coder l'IA
 
 *A été réalisé dans un cadre scolaire.*  
+
+! NE PAS OUBLIER DE CHANGER LES PATHS DANS LES DIFFERENTS FICHIERS !
